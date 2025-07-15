@@ -54,17 +54,16 @@ export const LandingPage = () => {
             <li>
               <strong>Map:</strong>
             </li>
-            <li>
-              <iframe
-                title="Venue Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0128320880145!2d-122.40387528468185!3d37.78479817975706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064fbc32d61%3A0xb295290bd0fef3a0!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1627856025703!5m2!1sen!2sus"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </li>
+
+            <iframe
+              title="Venue Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0128320880145!2d-122.40387528468185!3d37.78479817975706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064fbc32d61%3A0xb295290bd0fef3a0!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1627856025703!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
             <li>
               <strong>Virtual Event Info:</strong> Hosted on Zoom Webinar
               platform

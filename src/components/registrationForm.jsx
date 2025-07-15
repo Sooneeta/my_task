@@ -2,6 +2,11 @@ import "../styles/registrationform.css";
 
 export const RegistrationForm = () => {
   const ticketType = ["Early Bird", "Standard", "Student", "Virtual Access"];
+
+  const handleBuyTicket = (e) => {
+    e.preventDefault();
+    alert("Form is submitted");
+  };
   return (
     <>
       <div className="form-wrapper">
@@ -12,13 +17,13 @@ export const RegistrationForm = () => {
           <input placeholder="Organization" />
           <select>
             {ticketType?.map((type, index) => (
-              <option value="type" key={type}>
+              <option value={type} key={type}>
                 {type}
               </option>
             ))}
           </select>
           <input placeholder="Payment Information" />
-          <button>Buy Ticket</button>
+          <button onClick={(e) => handleBuyTicket(e)}>Buy Ticket</button>
         </form>
       </div>
     </>
