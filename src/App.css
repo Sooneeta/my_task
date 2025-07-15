@@ -1,0 +1,90 @@
+.hero-section {
+  position: relative;
+  background-image: url("/src/assets/hero-section-image.webp");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0.5em;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 45vh;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  padding-top: 1.5em;
+}
+
+.hero-section {
+  h4 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: justify;
+  }
+}
+
+.tag-line {
+  font-family: serif;
+  color: rgb(70, 130, 180);
+}
+
+.target-audience {
+  border: 1px solid gray;
+  margin: 0.3em;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    font-family: sans-serif;
+  }
+}
+
+.target-audience-items-wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  padding: 0.5em;
+}
+
+.target-audience-item {
+  font-size: 1.2rem;
+  background-color: rgb(70, 130, 180);
+  color: white;
+  padding: 0.5em;
+  min-width: 37vw;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.agenda-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

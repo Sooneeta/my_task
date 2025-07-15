@@ -1,0 +1,23 @@
+.logo-image {
+  width: 27%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.title-section {
+  margin: 0;
+  text-align: justify;
+  h1 {
+    font-family: monospace;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-family: serif;
+    color: rgb(70, 130, 180);
+  }
+}
