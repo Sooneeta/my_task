@@ -12,16 +12,16 @@
 
 .testimonial-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   place-items: center;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .testimonial-card {
   background: white;
   border-radius: 1rem;
   padding: 2rem;
-  width: 70vw;
+
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: transform 0.3s ease;

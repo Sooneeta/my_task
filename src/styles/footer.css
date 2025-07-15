@@ -5,7 +5,7 @@
   justify-content: space-between;
   color: white;
   padding: 1em 1.5em;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact-section {
@@ -23,5 +23,5 @@
 .social-links {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 1em;
 }

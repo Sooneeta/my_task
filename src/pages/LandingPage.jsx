@@ -4,7 +4,6 @@ import { targetAudience } from "../data/constant";
 import { SpeakerCard } from "../components/speakerCard";
 import { Agenda } from "../components/agenda";
 import { TestimonialCard } from "../components/testimonial";
-import "../styles/landingpage.css";
 import { FAQSection } from "../components/faq";
 import { Footer } from "../components/footer";
 import { RegistrationForm } from "../components/registrationForm";
@@ -41,43 +40,45 @@ export const LandingPage = () => {
         <section className="speaker-section">
           <SpeakerCard />
         </section>
-        <section className="agenda-section">
-          <Agenda />
-        </section>
-        <section className="venue-section">
-          <h2>Location</h2>
-          <ul>
-            <li>
-              <strong>Physical Venue:</strong> San Francisco Convention Center,
-              747 Howard St, San Francisco, CA 94103
-            </li>
-            <li>
-              <strong>Map:</strong>
-            </li>
+        <div className="agenda-venue-wrapper">
+          <section className="agenda-section">
+            <Agenda />
+          </section>
+          <section className="venue-section">
+            <h2>Location</h2>
+            <ul>
+              <li>
+                <strong>Physical Venue:</strong> San Francisco Convention
+                Center, 747 Howard St, San Francisco, CA 94103
+              </li>
+              <li>
+                <strong>Map:</strong>
+              </li>
 
-            <iframe
-              title="Venue Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0128320880145!2d-122.40387528468185!3d37.78479817975706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064fbc32d61%3A0xb295290bd0fef3a0!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1627856025703!5m2!1sen!2sus"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-            <li>
-              <strong>Virtual Event Info:</strong> Hosted on Zoom Webinar
-              platform
-            </li>
-            <li>
-              <strong>Recommended Hotels:</strong> Grand Hyatt San Francisco,
-              Marriott Marquis
-            </li>
-            <li>
-              <strong>Transportation:</strong> Accessible via BART and public
-              transit
-            </li>
-          </ul>
-        </section>
+              <iframe
+                title="Venue Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0128320880145!2d-122.40387528468185!3d37.78479817975706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064fbc32d61%3A0xb295290bd0fef3a0!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1627856025703!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+              <li>
+                <strong>Virtual Event Info:</strong> Hosted on Zoom Webinar
+                platform
+              </li>
+              <li>
+                <strong>Recommended Hotels:</strong> Grand Hyatt San Francisco,
+                Marriott Marquis
+              </li>
+              <li>
+                <strong>Transportation:</strong> Accessible via BART and public
+                transit
+              </li>
+            </ul>
+          </section>
+        </div>
         <section className="registration-section">
           <RegistrationForm />
         </section>

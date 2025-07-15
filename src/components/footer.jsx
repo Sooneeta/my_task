@@ -9,6 +9,9 @@ export const Footer = () => {
   return (
     <div className="footer-wrapper">
       <section className="contact-section">
+        <span style={{ fontWeight: "bold", textDecorationLine: "underline" }}>
+          Contact Us
+        </span>
         <div className="contact">
           <MdEmail />
           <span>info@techinnovate2025.com </span>

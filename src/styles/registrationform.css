@@ -3,6 +3,7 @@
   padding: 1.5em;
   background: #ffffff;
   overflow: visible;
+  margin: 0 auto;
 }
 
 .form-wrapper h3 {
@@ -53,4 +54,16 @@ button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .form-wrapper {
+    max-width: 88vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-wrapper {
+    max-width: 70vw;
+  }
 }
